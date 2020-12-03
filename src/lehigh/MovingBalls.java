@@ -73,17 +73,8 @@ for (int i =0;i<numberofballs;i++){
             }
 
         }
+        mouseClicked();
 
-
-  if (mousePressed){
-if(testdist(mouseX, mouseY, points[0])) {
-
-    points = delete(0, points);
-
-    numberofballs = numberofballs - 1;
-
-}
-}
         }
 
 
@@ -134,6 +125,16 @@ System.arraycopy(arr,0,arrNew,0,arrNew.length);
 
     return arrNew;
 }
+
+    public void mouseClicked(){
+        if(testdist(mouseX, mouseY, points[0])) {
+
+            points = delete(0, points);
+
+            numberofballs = numberofballs - 1;
+
+        }
+    }
 // recalling
 /*
 int z[] = new int[]{1,2};
