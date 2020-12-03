@@ -5,8 +5,8 @@ import processing.core.PApplet;
 public class Sort extends PApplet {
 
 
-    float []height = {15,8,6,11,1,3,9};
-    float x1[] = {50,100,150,200,250,300};
+    float []height = {0,15,8,6,11,1,3,9};
+    float x1[] = {0,50,100,150,200,250,300};
 
     float width = 25;
 
