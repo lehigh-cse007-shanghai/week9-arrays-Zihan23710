@@ -5,8 +5,8 @@ import processing.core.PApplet;
 public class Sort extends PApplet {
 
 
-    float []height = {0,15,8,6,11,1,3,9};
-    float x1[] = {0,50,100,150,200,250,300,350};
+    float []height = {15f,8f,6f,11f,1f,3f,9f};
+    float x1[] = {50,100,150,200,250,300,350};
 
     float width = 25;
 
@@ -47,7 +47,7 @@ public class Sort extends PApplet {
             if(k >i){
                 fill(255);
             }
-            if(k>= max){fill(0,0,255);}
+            if(k >= max){fill(0,0,255);}
 
 
 
@@ -78,6 +78,9 @@ public class Sort extends PApplet {
 
     public void drawRect(int i){
         rect(x1[i], 0, width, height[i] * 20);
+
+        textSize(15);
+        text(height[i],x1[i] , height[i] * 20+50);
     }
 
 }
