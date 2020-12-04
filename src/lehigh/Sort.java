@@ -26,7 +26,7 @@ public class Sort extends PApplet {
 
     }
     public void draw() {
-        delay(200);
+        delay(500);
         background(0);
 
         if (i >= max) {
@@ -47,7 +47,9 @@ public class Sort extends PApplet {
             if(k >i){
                 fill(255);
             }
-            if(k >= max){fill(0,0,255);}
+            if(k >= max ){fill(0,0,255);}
+            if(max <= 0){fill(0,0,255);}
+
 
 
 
