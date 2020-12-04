@@ -6,7 +6,7 @@ public class Sort extends PApplet {
 
 
     float []height = {0,15,8,6,11,1,3,9};
-    float x1[] = {0,50,100,150,200,250,300};
+    float x1[] = {0,50,100,150,200,250,300,350};
 
     float width = 25;
 
@@ -41,7 +41,7 @@ public class Sort extends PApplet {
         }
         delay(500);
         fill(255);
-        for(int k = 0; k < height.length -1; k++) {
+        for(int k = 0; k < height.length ; k++) {
             drawRect(k);
             if(k == i-1 ){fill(255,0,0);}
             if(k >i){
