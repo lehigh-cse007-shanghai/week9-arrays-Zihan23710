@@ -42,14 +42,13 @@ public class Sort extends PApplet {
         delay(500);
         fill(255);
         for(int k = 0; k < height.length ; k++) {
-            drawRect(k);
-            if(k == i-1 ){fill(255,0,0);}
-            if(k >i){
+
+            if(k ==  i || i == i+1 ){fill(255,0,0);}
+            if(k >i+1){
                 fill(255);
             }
-            if(k >= max ){fill(0,0,255);}
-            if(max <= 0){fill(0,0,255);}
-
+            if(k > max ){fill(0,0,255);}
+            drawRect(k);
 
 
 
